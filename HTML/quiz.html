@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Generator składu AC Royal</title>
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../Zdjecia/LogoACRoyal.jpg">
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">AC Royal</h1>
+      <nav>
+        <ul>
+          <li><a href="../HTML/index.html">Główna</a></li>
+          <li><a href="../HTML/zawodnicy.html">Zawodnicy</a></li>
+          <li><a href="../HTML/historia.html">Historia</a></li>
+          <li><a href="../HTML/kontakt.html">Kontakt</a></li>
+          <li><a href="../HTML/social.html">Social Media</a></li>
+          <li><a href="../HTML/wiadomosci.html">Wiadomości</a></li>
+          <li><a href="../HTML/quiz.html">Gra</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Generator składu AC Royal</h2>
+
+    <p>Wpisz ile chcesz obrońców, pomocników i napastników, a aplikacja wylosuje skład.</p>
+
+    <form id="form-sklad">
+      <label for="obroncy">Obrońcy:</label>
+      <input type="number" id="obroncy" name="obroncy" min="0" max="9" value="4" required />
+
+      <label for="pomocnicy">Pomocnicy:</label>
+      <input type="number" id="pomocnicy" name="pomocnicy" min="0" max="7" value="4" required />
+
+      <label for="napastnicy">Napastnicy:</label>
+      <input type="number" id="napastnicy" name="napastnicy" min="0" max="2" value="2" required />
+
+      <button type="button" onclick="generujSklad()">Generuj skład</button>
+    </form>
+
+    <section id="wynik-sklad"></section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AC Royal</p>
+  </footer>
+
+  <script src="../JS/skrypt.js"></script>
+</body>
+</html>
+
